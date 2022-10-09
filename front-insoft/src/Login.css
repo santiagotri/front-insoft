@@ -1,0 +1,14 @@
+.login-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+
+}
+
+.boton-iniciar-sesion{
+    background-color: #e2322c;
+}
