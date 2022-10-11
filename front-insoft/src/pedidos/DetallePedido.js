@@ -1,30 +1,30 @@
 import Card from "react-bootstrap/Card";
-import "./Clientes.css";
+import "./Pedidos.css";
 import { useEffect, useState } from "react";
-import EditarClienteForm from "./EditarClienteForm";
+import EditarPedidoForm from "./EditarPedidoForm";
 
-function DetalleCliente(props){
+function DetallePedido(props){
     
     return (
         <div className="col">
             <Card className="mx-auto" style={{marginTop:"2rem", width:"17rem"}}>
               <Card.Title style={{ textAlign: "center" , marginTop:"1rem", color:"#e2322c"}}>
-                {props.nombre}
+                Pedido #{props.id}
               </Card.Title>
               <Card.Body>
                 <h6>
-                    Nit
+                    Cliente
                 </h6>
-                <p>{props.nit}</p>
+                <p>{props.cliente}</p>
                 <h6>
-                    Correo contacto
+                    Productos
                 </h6>
-                <p>{props.correocontacto}</p>
+                <p>{props.productos}</p>
               </Card.Body>
-              <EditarClienteForm nombre={props.nombre} correocontacto={props.correocontacto} nit={props.nit}></EditarClienteForm>
+              <EditarPedidoForm id={props.id}></EditarPedidoForm>
             </Card>
         </div>
       );
 }
 
-export default DetalleCliente;
+export default DetallePedido;

@@ -17,7 +17,7 @@ function CrearClienteForm(props) {
 
     }
   useEffect(() => {
-    console.log("Renderizado");
+    //console.log("Renderizado");
   });
 
   function addButtonPresionado() {

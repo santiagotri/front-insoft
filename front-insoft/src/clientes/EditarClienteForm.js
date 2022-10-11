@@ -14,7 +14,7 @@ function EditarClienteForm(props) {
     useState(false);
 
   useEffect(() => {
-    console.log("Renderizado");
+    //console.log("Renderizado");
   });
 
   function addButtonPresionado() {
