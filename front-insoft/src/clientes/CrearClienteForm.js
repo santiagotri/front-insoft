@@ -13,9 +13,6 @@ function CrearClienteForm(props) {
   const [dialogoCrearClienteDesplegado, setDialogoCrearClienteDesplegado] =
     useState(false);
 
-    if(props.actualizar){
-
-    }
   useEffect(() => {
     //console.log("Renderizado");
   });
