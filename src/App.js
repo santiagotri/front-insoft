@@ -8,6 +8,7 @@ import Button from "react-bootstrap/esm/Button";
 import ListaClientes from "./clientes/ListaClientes";
 import CrearPedidoForm from "./pedidos/CrearPedidoForm";
 import ListaPedidos from "./pedidos/ListaPedidos";
+import GraficasVentas from "./ventas/GraficasVentas";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/" element={<Login></Login>}></Route>
         <Route exact path="/clientes" element={<Clientes></Clientes>}></Route>
         <Route exact path="/pedidos" element={<Pedidos></Pedidos>}></Route>
+        <Route exact path="/ventas" element={<Ventas></Ventas>}></Route>
       </Routes>
     </Router>
   );
@@ -83,6 +85,15 @@ function Pedidos(){
       <ListaPedidos></ListaPedidos>
     </div>
     );
+}
+
+function Ventas(){
+  return(
+    <div>
+      <NavbarInsoft ventas nombreUsuario="Nombre Usuario"></NavbarInsoft>
+      <GraficasVentas></GraficasVentas>
+    </div>
+  )
 }
 
 export default App;

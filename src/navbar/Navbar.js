@@ -6,7 +6,9 @@ import logo from "./logo-insoft.png"
 
 
 function NavbarInsoft(props) {
-
+  function botonAyuda(){
+    window.location.href = "mailto:ayudaprovedores@insoft.com";
+  }
   return (
     <Navbar collapseOnSelect expand="lg" bg="light" variant="white">
     <Container>
@@ -16,11 +18,12 @@ function NavbarInsoft(props) {
         <Nav className="me-auto">
           <Nav.Link href="clientes" active={props.clientes}>Clientes</Nav.Link>
           <Nav.Link href="pedidos" active={props.pedidos}>Pedidos</Nav.Link>
+          <Nav.Link href="ventas" active={props.ventas}>Ventas</Nav.Link>
          
         </Nav>
         <NavDropdown title={props.nombreUsuario} id="collasible-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">Perfil</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">
+            <NavDropdown.Item onClick={botonAyuda}>
               Ayuda
             </NavDropdown.Item>
             <NavDropdown.Divider />
